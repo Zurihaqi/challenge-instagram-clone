@@ -1,4 +1,4 @@
-Tugas challenge membuat instagram clone
+Tugas challenge membuat instagram clone menggunakan react native dengan tamagui
 
 ## Screenshots
 
