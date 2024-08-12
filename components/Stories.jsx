@@ -1,12 +1,21 @@
 import React from "react";
-import { YStack, XStack, Avatar, Text, ScrollView, View } from "tamagui";
+import { YStack, XStack, Avatar, Text, ScrollView, View, Image } from "tamagui";
+import { LinearGradient } from "expo-linear-gradient";
 import FEEDS_DATA from "../assets/feedData";
 
 const StoryItem = ({ imageUri, name }) => (
   <YStack alignItems="center">
-    <Avatar circular size="$6">
-      <Avatar.Image source={{ uri: imageUri }} />
-    </Avatar>
+    <LinearGradient
+      colors={['#405DE6', '#5B51D8', '#833AB4', '#C13584', '#E1306C', '#FD1D1D', '#F56040', '#777737', '#FCAF45', '#FFDC80']}
+      start={{x: 1, y: 0}}
+      end={{x: 0, y: 1}}
+      style={{
+        borderRadius: 50,
+        padding: 2.5,
+      }}
+    >
+      <Image source={{uri: imageUri, width: 60, height: 60}} style={{borderRadius: 50}} />
+    </LinearGradient>
     <Text mt="$2" textAlign="center" size="$2">
       {name}
     </Text>

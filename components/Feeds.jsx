@@ -42,7 +42,7 @@ const Feeds = () => {
           >
             <XStack gap="$4">
               <Ionicons name="heart-outline" size={25} color="black" />
-              <Ionicons name="chatbubble-outline" size={25} color="black" />
+              <Ionicons name="chatbubble-outline" size={25} color="black" style={{transform: 'rotate(270deg)'}}/>
               <Ionicons name="paper-plane-outline" size={25} color="black" />
             </XStack>
             <Ionicons name="bookmark-outline" size={25} color="black" />
